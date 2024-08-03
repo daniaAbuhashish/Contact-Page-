@@ -1,0 +1,157 @@
+<html>
+<head>
+    <title>Assignment1 Home Page</title>
+    <style>
+        body {
+            background-color: #EEE5E9;
+        }
+
+        #bar {
+            text-align: center;
+            background-color: #1c875d;
+            color: white;
+            margin: 5px 0px 5px 0px;
+        }
+
+        #main-nav {
+            background-color: coral;
+        }
+
+        #main-nav li {
+            display: inline;
+            position: center;
+        }
+
+        #main-nav ul ul {
+            display: none;
+            position: absolute;
+        }
+
+        #main-nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 30%;
+        }
+
+        #main-nav li:hover {
+            background-color: #faf6f6;
+            color: rgb(8, 3, 3);
+        }
+
+        #main-nav li:hover ul {
+            display: block;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .main-container {
+            background-color: #afe9f1;
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content-box {
+            background-color: #EEE5E9;
+            width: 100%;
+        }
+
+        .announcement-box {
+            background-color: lightskyblue;
+            margin-left: 10px;
+            width: 70%;
+            float: left;
+            border: 3px solid black;
+        }
+
+        #sidebar {
+            background-color: rgb(96, 143, 14);
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            width: 20%;
+            float: right;
+            border: 3px solid black;
+        }
+
+        .submit-button {
+            background-color:whitesmoke;
+            color: rgb(22, 2, 2);
+            margin-top: 10px;
+            position: static;
+        }
+
+        img{
+            float: right;
+            margin-right: 10px;
+        }  
+
+        /* Hover effect for the reach out button */
+        .reachOut-button:hover {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Title Bar -->
+    <header id="bar">
+        <h1>INST377 - Class Page</h1>
+    </header>
+    <!-- Navigation Bar -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Games.html">Game</a></li>            
+            <li><a href="Contactpage.html">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main text area -->
+    <div class="main-container">
+        <form action="Contactpage.html" method="post">
+        <h1>Announcements</h1>
+        <div class="announcement-box">
+            <div class="content-box">
+                <h1>LinkedIn</h1>
+                <!-- LinkedIn Image -->
+                <img src="https://images.rawpixel.com/image_png_400/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kMS0xMC5wbmc.png"  width="15" height="15">     
+                <p>Let's connect on LinkedIn !</p>
+            </div>
+
+            <div class="content-box">
+                <h1>Portfolio</h1>
+                <p>Check out my portfolio.</p>
+            </div>
+
+            <div class="content-box">
+                <h1>Need a referral?</h1>
+                <p>I will be happy to help.</p>
+            </div>
+        </div>
+
+        <!-- Side bar area -->
+        <aside id="sidebar">
+            <h1>Contact Info</h1>
+            <hr>
+            <h3>Name: Dania Abuhashish</h3>
+            <h3>Email: dabuhas@terpmail.umd.edu</h3>
+
+            <!-- Reach Out Button -->
+            <br><br>
+            <button type="submit" class="reachOut-button">Reach Out!</button>
+            <br> <br>
+        </aside>
+        </form>
+    </div>
+
+    <!-- Footer area -->
+    <footer id="bar">
+        <p1>Thanks!</p1>
+    </footer>
+</body>
+</html>
